@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+        <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js" type="text/javascript"></script>
+    <title>webdesign1</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Borel&family=Merriweather:wght@300&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Della+Respira&family=Noto+Serif:wght@700&family=Rock+Salt:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- <style>
+	
+        #defaultCanvas0{
+        position: absolute;
+        top: 1173px;
+        left:228px;
+        width: 444px;
+        height: 400px;
+        z-index:10000;
+        border: 3px solid white;
+        }
+        
+        </style>
+    <script>
+        let classifier;
+        // Model URL
+        let imageModelURL = 'https://teachablemachine.withgoogle.com/models/2iqXR2IsE/';
+
+        // Video
+        let video;
+        let flippedVideo;
+        // To store the classification
+        let label = "";
+
+        // Load the model first
+        function preload() {
+            classifier = ml5.imageClassifier(imageModelURL + 'model.json');
+        }
+
+        function setup() {
+            createCanvas(320, 260);
+            // Create the video
+            video = createCapture(VIDEO);
+            video.size(320, 240);
+            video.hide();
+
+            flippedVideo = ml5.flipImage(video)
+            // Start classifying
+            classifyVideo();
+        }
+
+        function draw() {
+            background(0);
+            // Draw the video
+            image(flippedVideo, 0, 0);
+
+            // Draw the label
+            fill(255);
+            textSize(16);
+            textAlign(CENTER);
+            text(label, width / 2, height - 4);
+        }
+
+        // Get a prediction for the current video frame
+        function classifyVideo() {
+            flippedVideo = ml5.flipImage(video)
+            classifier.classify(flippedVideo, gotResult);
+        }
+
+        // When we get a result
+        function gotResult(error, results) {
+            // If there is an error
+            if (error) {
+                console.error(error);
+                return;
+            }
+            // The results are in an array ordered by confidence.
+            // console.log(results[0]);
+            label = results[0].label;
+            // Classifiy again!
+            classifyVideo();
+
+            sessionStorage.setItem("Label",label)
+        }
+
+        console.log(sessionStorage)
+        label = sessionStorage.getItem("Label")
+    </script>-->
+    <script src="idex.js"></script>
+    <div id="main">
+        
+        <div id="nav">
+            <h3>SLATE</h3>
+            <div id="links"><a href=""><img src="./A.png"></a><a href=""><img src="./Snew.png" alt=""></a><a href=""><img src="./L.png" alt=""></a></div>
+            
+        </div>
+        <div id="heading">
+            <h1>Learn ASL</h1>
+            <p>ASL made easy with a fun interactive <\ML> model!</p>
+            <button id="explore">Explore Now</button>
+        </div>
+        <div id="illus">
+            <img src="webillus.jpg" alt="">
+
+            
+        </div>
+        <div id="video">
+            <div id="webcam"></div>
+        </div>
+        <div id="lineelement"><img src="icons8-wavy-line-50.png" alt=""></div>
+        <div id="pink"><img src="cream.svg" alt=""></div>
+        <div id="secondsection"></div>
+        <div id="actualpink"><img src="pinkk.svg" alt=""></div>
+        <div id="thirdsection"></div>
+        <div id="asl"><img src="Sign_language_A.svg" id="asl-image" alt=""></div>
+        <div id="aslinner1"></div>
+        
+
+        <div id="sad"></div>
+         <div id="happy"></div>   
+         <div id="choose">Enter an alphabet</div>
+         <input class="input" type="text" id="as-input">
+         <button type="button" class="submit" id="submit" onclick="doThis()">Search</button>
+
+         <div class="dropdown">
+            <button class="dropbtn" id="mybutton"></button>
+            <div class="dropdown-content">
+              <a href="javascript:void(0);" id="a" >A</a>
+              <a href="javascript:void(0);" id="b">B</a>
+              <a href="javascript:void(0);" id="c">C</a>
+              <a href="javascript:void(0);"id="i">I</a>
+              <a href="javascript:void(0);"id="v">V</a>
+              <a href="javascript:void(0);"id="w">W</a>
+            </div>
+          </div>
+        
+
+        
+    
+</body>
+</html>

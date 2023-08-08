@@ -1,0 +1,321 @@
+*{
+    margin:0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    padding:0;
+    box-sizing: border-box;
+   
+    
+}
+html,body{
+    width:100%;
+    height: 100%;
+}
+#main{
+    width: 100%;
+    position: relative;
+}
+
+#nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:4vw;
+    width: 100%;
+    height: 15vh;
+    background-color:#fafaf2 ;
+}
+#nav #links{
+    display: flex;
+    gap:-72px;
+    right:37px;
+
+
+}
+#links a{
+    text-decoration: none;
+    font-weight: 500;
+    font-family: "PlayFair Display";
+    font-size: 13px;
+}
+#nav h3{
+    text-transform: uppercase; 
+    font-weight: bold;
+    font-family: 'Rock Salt', cursive;
+    font-size: larger;
+    margin-left: 37px;
+    text-shadow: 1px 1px 0.5px rgb(88, 85, 85)
+
+}
+#heading{
+    display:flex ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-right: 5px;
+    width: 100%;
+    height: 40vh;
+    background-color:#fbfbf4 ;
+}
+#heading p{
+    text-align: center;
+    width:50% ;
+    margin: 10px 30px 42px;
+    font-size: 16.5px;
+    line-height: 1.3;
+    font-family: 'Borel', cursive;
+    font-weight: 400;
+    
+}
+#heading h1{
+    font-weight: 500;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 90px;
+    text-shadow: 1px 1px 1px rgb(88, 85, 85);
+}
+#heading button{
+    padding: 12px 32px;
+    background-color: #fbfbf4;
+    color: black;
+    box-shadow: 3px 3px 1px black;
+    border-radius: 100px
+    
+    
+}
+#illus{
+    width: 100%;
+}
+#illus img{
+   width: 100%; 
+   margin-right: 0;
+   z-index: -1;
+   position: relative;
+}
+#video{
+    position: absolute;
+    z-index: 77;
+    width: 558px;
+    height: 476px;
+    top:1065px;
+    left:115px;
+    border-radius: 40px;
+    background-color: black;
+    background-image: url(videobackshort.jpg);
+    background-size: cover;
+    box-shadow: 3px 3px 10px rgb(73, 70, 70);
+
+}
+#webcam{
+    
+    margin:40px 20px 20px 50px;
+    width: 444px;
+    height: 400px;
+    z-index: 99;
+    background-color: black;
+    top: 10px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 10px rgb(73, 70, 70);
+}
+#pink{
+    position: absolute;
+    z-index: 5;
+    top:950px;
+    scale:1.1;
+}
+#secondsection{
+    position:absolute ;
+width: 100%;
+height: 712px;
+background-color:#fbfbf4 ;
+z-index: 2;
+position: absolute;
+top: 992px;
+}
+#actualpink{
+    position: absolute;
+    z-index: 5;
+    top:1618px;
+    scale:1.1;
+}
+#thirdsection{
+    position:absolute ;
+width: 100%;
+height: 139px;
+background-color:#ffdada ;
+z-index: 2;
+position: absolute;
+top: 1662px;
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+#asl{
+    width: 423px;
+    height: 334px;
+    z-index: 99;
+    right: 467px;
+    background-image: url(asloutput.png);
+    background-size: cover;
+    scale: 1.7;
+    bottom: -178px;
+    position: absolute;
+}
+#aslinner1{
+    display: none;
+    width: 87px;
+    height: 114px;
+    z-index: 959;
+    right: 542px;
+    
+    scale: 1.7;
+    bottom: -290px;
+    position: absolute;
+}
+
+#sad{
+    width: 76px;
+    height: 76px;
+    z-index: 99;
+    right: 724px;
+    background-image: url(Button---Sad.svg);
+    background-size: contain;
+    scale: 1.7;
+    bottom: -401px;
+    position: absolute;
+    box-shadow: 1px 1px 30px rgba(255, 70, 70, 0.501);
+    border-radius: 40px;
+}
+#happy{
+    width: 76px;
+    height: 76px;
+    z-index: 99;
+    right: 555px;
+    background-image: url(Button---Happy.svg);
+    background-size: contain;
+    scale: 1.7;
+    bottom: -407px;
+    position: absolute;
+    box-shadow: 1px 1px 30px rgb(186, 227, 164);
+    border-radius: 40px;
+}
+
+.dropbtn {
+    background-color: #deed7e;
+    color: white;
+    position: absolute;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    border-radius: 20px;
+    width: 329px;
+    top: 0px;
+    right: 104px;
+    height: 199px;
+    font-size: 125px;
+    font-family: 'Merriweather', serif;
+    border-right: 5px solid rgba(0, 0, 0, 0.893);
+    border-bottom: 5px solid rgba(0, 0, 0, 0.667);
+    box-shadow: 1px 1px 15px rgb(161, 168, 157);
+
+  }
+  
+  .dropdown {
+    position: absolute;
+    display: inline-block;
+    z-index: 3;
+    top: 1142px;
+    left: 1249px;
+    width: 329px;
+}
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    top: 1px;
+    width: 47px;
+    left: 191px;
+    border-radius: 200%;
+    /* box-shadow: 1px 1px 15px rgb(161, 168, 157); */
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    background-color: #deed7e;
+    text-decoration: none;
+    display: block;
+    border: 2px solid black;
+    border-radius: 15px;
+  }
+  
+  .dropdown-content a:hover {background-color: #e2633c;}
+  
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  .dropdown:hover .dropbtn {background-color: #f3d1d1;}
+  .dropdown-content#a:active #aslinner1{
+    display: block;
+  }
+  #choose{
+    position: absolute;
+    font-family: 'Borel', cursive;
+    z-index: 9999;
+    font-size: 32px;
+    font-weight: 800;
+    right:139px;
+    top: 1086px;
+  }
+  #heading button:hover{
+    background-color: black;
+    color: white;
+    box-shadow: 3px 3px 1px rgb(255, 255, 255);
+  }
+  input{
+    position: absolute;
+    top: 1220px;
+    right: 196px;
+    z-index: 989870;
+    height: 40px;
+    border: 5px solid black;
+    border-radius: 15px;
+  }
+@keyframes animate{
+        50%  {transform: scale(1.2);}
+      
+    }
+#submit{
+    position: absolute;
+    top: 1353px;
+    right:383px;
+    z-index: 989870;
+    height: 40px;
+    border: 5px solid black;
+    border-radius: 15px;
+    padding: 7px 8px;
+    background-color: #e2633c;
+    font-family: 'Borel', cursive;
+    cursor: pointer;
+    font-weight:bolder;
+    box-shadow: 1px 1px 15px rgb(161, 168, 157);
+
+}
+#submit button:hover{
+    background-color: #deed7e;
+}
+
+#asl-image{
+    width: 61px;
+    height: auto;
+    position: absolute;
+    top: 189px;
+    left: 169px;
+}
+
+   
+
+
+
+
+
+
+
