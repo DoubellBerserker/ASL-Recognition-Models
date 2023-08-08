@@ -152,11 +152,11 @@ body::-webkit-scrollbar {
     width: 423px;
     height: 334px;
     z-index: 99;
-    right: 467px;
+    right: 435px;
     background-image: url(asloutput.png);
     background-size: cover;
     scale: 1.7;
-    bottom: -178px;
+    bottom: -215px;
     position: absolute;
 }
 #aslinner1{
@@ -175,11 +175,11 @@ body::-webkit-scrollbar {
     width: 76px;
     height: 76px;
     z-index: 99;
-    right: 724px;
+    right: 690px;
     background-image: url(Button---Sad.svg);
     background-size: contain;
     scale: 1.7;
-    bottom: -401px;
+    bottom: -453px;
     position: absolute;
     box-shadow: 1px 1px 30px rgba(255, 70, 70, 0.501);
     border-radius: 40px;
@@ -188,11 +188,11 @@ body::-webkit-scrollbar {
     width: 76px;
     height: 76px;
     z-index: 99;
-    right: 555px;
+    right: 543px;
     background-image: url(Button---Happy.svg);
     background-size: contain;
     scale: 1.7;
-    bottom: -407px;
+    bottom: -453px;
     position: absolute;
     box-shadow: 1px 1px 30px rgb(186, 227, 164);
     border-radius: 40px;
@@ -208,7 +208,7 @@ body::-webkit-scrollbar {
     border-radius: 20px;
     width: 329px;
     top: 0px;
-    right: 104px;
+    right: 164px;
     height: 199px;
     font-size: 125px;
     font-family: 'Merriweather', serif;
